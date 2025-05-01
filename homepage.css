@@ -1,0 +1,448 @@
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #d27d42;
+    color: #fff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e89c62;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo p{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+    margin-top: 20px;
+    float: right;
+    font-family: Times New Roman;
+    color: #fff;
+} 
+.logo img {
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+    margin-left: 30px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+.navbar ul li {
+    position: relative;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    transition: color 0.25s;
+    padding: 10px;
+    display: block;
+}
+.lia a:hover {
+    color: black;
+}
+.lia a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.lia a:hover::after {
+    transform: scaleX(1);
+}
+#login a {
+    color: black;
+    text-align: center;
+}
+#login {
+    background-color: white;
+    border-radius: 10px;
+    width:90px;
+    margin-right: -25px;
+}
+#login a:hover {
+    color: white;
+    transition: 0s;
+}
+#login :hover {
+    background-color: black;
+    border-radius: 10px;
+    width: 70px;
+}
+#signup a {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+#signup  {
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    width:88px;
+}
+#signup a:hover {
+    color: rgb(255, 255, 255);
+}
+#signup :hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 68px;
+}
+#admin {
+    background-color: #4CAF50;
+    border-radius: 10px;
+    width: 100px;
+}
+#admin a {
+    color: white;
+    text-align: center;
+}
+#admin:hover {
+    background-color: #3e8e41;
+}
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 90px;
+    gap: 30px;
+}
+.wel {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    clip-path: ellipse(75% 100% at 50% 50%);
+}
+.content-sections {
+    flex: 1;
+    text-align: center;
+}
+.content-sections h1 {
+    font-size: 3em;
+    font-weight: bold;
+    width: 900px;
+}
+.content-sections p {
+    font-size: 1.5em;
+}
+.content-sections .buttons {
+    margin-top: 20px;
+}
+.content-sections .buttons button {
+    background: #fff;
+    color: #d27d42;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 50px;
+}
+.menu {
+    background: #b77343;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.image-container {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    gap: 125px;
+}
+
+.image-box {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#menu-a{
+    font-size: 30px;
+    width: 220px;
+    margin-left: 65px;
+    font-family: cursive;
+}
+#menu-b{
+    font-size: 30px;
+    width: 200px;
+    margin-left: 550px;
+    margin-block-start: -48px;
+    font-family: cursive;
+}
+#menu-c{
+    font-size: 30px;
+    width: 200px;
+    margin-left: 1030px;
+    margin-block-start: -48px;
+    font-family: cursive;
+}
+.ex-btn {
+    background: #f4a261;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.ex-btn a {
+    text-decoration: none;
+    color: white;
+}
+.homepage-layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #e89c62;
+}
+.left-section, .right-section {
+    width: 45%;
+    padding: 20px;
+    background: #f4b87a;
+    border-radius: 10px;
+    text-align: center;
+}
+.pickup {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+.order-pickup {
+    font-size: 2em;
+    font-weight: bold;
+}
+.content-section {
+    text-align: center;
+    padding: 40px;
+}
+.content-section h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+.content-section p {
+    font-size: 1.2em;
+}
+.content-section .buttons {
+    margin-top: 20px;
+}
+.content-section .buttons button {
+    background: #fff;
+    color: #d27d42;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 5px;
+}
+.con-btn {
+    background: #f4a261;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+/* Footer Styles */
+footer {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 40px 0 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    margin-bottom: 20px;
+}
+
+#logo-footer {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e89c62;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', serif;
+}
+
+.footer-location {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+.footer-location i {
+    color: #e89c62;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.footer-location p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.footer-column h3 {
+    color: #e89c62;
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: #e89c62;
+}
+
+.footer-links li, .footer-contact li {
+    margin-bottom: 12px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #e89c62;
+}
+
+.footer-contact i {
+    color: #e89c62;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.social-media a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #3a3a3a;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+.social-media a:hover {
+    background: #e89c62;
+    transform: translateY(-3px);
+}
+
+.business-hours h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #e89c62;
+}
+
+.business-hours p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #3a3a3a;
+}
+
+.copyright {
+    margin: 0;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+/* Font Awesome Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
